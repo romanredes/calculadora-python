@@ -29,6 +29,7 @@ def main():
         b = float(input("Ingresa el segundo número: "))
     except ValueError:
         print("Error: debes ingresar solo números válidos.")
+        input("\nPresiona Enter para salir...")
         return
 
     try:
@@ -45,6 +46,9 @@ def main():
             print("Opción no válida.")
     except ZeroDivisionError as e:
         print(f"Error: {e}")
+
+    # ⬇⬇⬇ PAUSA FINAL PARA QUE ALCANCES A VER EL RESULTADO
+    input("\nPresiona Enter para salir...")
 
 if __name__ == "__main__":
     main()
